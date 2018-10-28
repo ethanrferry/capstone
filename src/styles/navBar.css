@@ -1,0 +1,12 @@
+.navBar {
+    height: 35px;
+    width: 100vw;
+    display: grid;
+
+    background-color: red;
+}
+
+.navBar-text {
+    text-align: center;
+    margin-top: -20px;
+}
