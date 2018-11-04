@@ -7,6 +7,7 @@ import NavBar from "./navBar";
 import Showcase from "./showcase";
 
 
+
 export default class App extends Component {
     render() {
         return (
@@ -23,7 +24,7 @@ export default class App extends Component {
                   </div>
                 </div>
 
-                <div className='body'>
+                <div className='showcase'>
                     <Showcase />
                 </div>
             </div>

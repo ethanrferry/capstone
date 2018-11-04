@@ -5,6 +5,7 @@ import navHelper from "internal-nav-helper";
 const fluffykinsUrl='/fluffykins'
 
 class NavBar extends Component {
+
     render() {
         return (
             <div>
@@ -19,5 +20,6 @@ class NavBar extends Component {
 
 export default connect (
     "doUpdateUrl",
+    "selectRoute",
     NavBar
 )

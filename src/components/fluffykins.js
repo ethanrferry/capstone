@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "redux-bundler-react";
 import navHelper from "internal-nav-helper";
-import "./../styles/main.css";
 
 const homepageUrl = "/";
 

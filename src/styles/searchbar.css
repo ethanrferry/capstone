@@ -1,0 +1,9 @@
+.search-bar {
+    height: 50px;
+    width: 400px;
+
+    border-radius: 25px;
+    vertical-align: middle;
+
+    background-color: white;
+}

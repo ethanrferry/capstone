@@ -4,7 +4,7 @@ export default class Signin extends Component {
     render() {
         return (
             <div>
-                <h2>Signin...</h2>
+                <h2>Cart</h2>
             </div>
         );
     }

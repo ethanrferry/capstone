@@ -4,7 +4,7 @@ export default class HeaderLogo extends Component {
   render() {
     return (
       <div className="header-logo">
-        <h1 className="header-title">Mechanical Keyboards</h1>
+        <img src={require('./../images/mk_logo.png')} alt="logo"/>
       </div>
     );
   }

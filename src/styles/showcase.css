@@ -1,0 +1,22 @@
+.showcase img{
+    display: grid;
+    grid-template-columns: [product1-s] 2fr [product1-e product2-s] 1fr [product2-e] 2fr;
+
+    width: 80vw;
+    height: 90vh;
+    margin: auto;
+
+    border-radius: 10px;
+
+    z-index: -1;
+}
+
+/* .chimeracover img{
+    width: 200%;
+    height: 100%;
+
+    grid-column: product1-s/product2-e;
+    
+
+    z-index: 2;
+} */
