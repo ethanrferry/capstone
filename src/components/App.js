@@ -1,4 +1,7 @@
 import React, { Component } from "react";
+import { connect } from 'redux-bundler-react';
+import navHelper from 'internal-nav-helper';
+
 import "./../styles/main.css";
 import HeaderLogo from "./headerLogo";
 import SearchBar from "./searchbar";
@@ -10,8 +13,7 @@ import Showcase3 from "./showcase3";
 
 
 
-export default class App extends Component {
-    render() {
+const App = () => {
         return (
             <div className="body">
                 <div className="header">
@@ -27,11 +29,16 @@ export default class App extends Component {
                 </div>
 
                 <div className='showcase'>
-                    {/* <Showcase /> */}
-                    <Showcase2 />
+                    <Showcase />
+                    {/* <Showcase2 /> */}
                     {/* <Showcase3 /> */}
                 </div>
             </div>
         );
-    }
+    
 }
+ export default connect(
+     'doUpdateUrl',
+     'selectRoute',
+     App
+ )
