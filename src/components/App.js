@@ -5,6 +5,8 @@ import SearchBar from "./searchbar";
 import Signin from "./signin";
 import NavBar from "./navBar";
 import Showcase from "./showcase";
+import Showcase2 from "./showcase2";
+import Showcase3 from "./showcase3";
 
 
 
@@ -25,7 +27,9 @@ export default class App extends Component {
                 </div>
 
                 <div className='showcase'>
-                    <Showcase />
+                    {/* <Showcase /> */}
+                    <Showcase2 />
+                    {/* <Showcase3 /> */}
                 </div>
             </div>
         );
