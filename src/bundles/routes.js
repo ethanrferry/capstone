@@ -1,10 +1,12 @@
 import { createRouteBundle } from 'redux-bundler'
-import App from '../components/App'
-import Fluffykins from '../components/fluffykins'
+import Showcase from '../components/showcase';
+import Showcase2 from '../components/showcase2';
+import Showcase3 from '../components/showcase3';
 
 export default createRouteBundle({
-  '/': App,
-  '/fluffykins': Fluffykins
+  '/': Showcase,
+  '/showcase2': Showcase2,
+  '/showcase3': Showcase3
 },
 {
   routeInfoSelector: 'selectPathname'

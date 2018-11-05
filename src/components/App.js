@@ -1,19 +1,17 @@
-import React, { Component } from "react";
+import React from "react";
 import { connect } from 'redux-bundler-react';
-import navHelper from 'internal-nav-helper';
 
 import "./../styles/main.css";
 import HeaderLogo from "./headerLogo";
 import SearchBar from "./searchbar";
 import Signin from "./signin";
 import NavBar from "./navBar";
-import Showcase from "./showcase";
-import Showcase2 from "./showcase2";
-import Showcase3 from "./showcase3";
 
 
+const App = ({ doUpdateUrl, route }) => {
 
-const App = () => {
+    const Page = route;
+
         return (
             <div className="body">
                 <div className="header">
@@ -29,9 +27,7 @@ const App = () => {
                 </div>
 
                 <div className='showcase'>
-                    <Showcase />
-                    {/* <Showcase2 /> */}
-                    {/* <Showcase3 /> */}
+                    <Page />
                 </div>
             </div>
         );
